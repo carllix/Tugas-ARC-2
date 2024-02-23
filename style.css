@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100vh;
+}
+
 body {
     background: linear-gradient(#215742,#10241C);
     color: #ffff;
@@ -58,8 +62,11 @@ a {
     padding: 1rem;
     border-radius: 20px;
     box-shadow: 2px 3px 0 black;
-    margin-bottom : 20px;
     transition: 0.5s;
+}
+
+.box-content:not(:last-child) {
+    margin-bottom : 20px;
 }
 
 .box-content a:hover{
